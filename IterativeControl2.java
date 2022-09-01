@@ -31,7 +31,6 @@ class MyPanel extends JPanel
       // 2)  Display the n
       System.out.println(n);
       
-      
       // 3)  Display n random blue lines (initialize the x and y values of the end points
       //     using random number) using a for loop.
       g.setColor(Color.BLUE);
