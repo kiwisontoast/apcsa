@@ -48,7 +48,19 @@ class MyPanel extends JPanel
       
       // 4)  Display n random green lines using a while loop
       g.setColor(Color.GREEN);
-
+      int b = 0;
+      while(b<=n){
+         int x1 = 0;
+         int y1 = 0;
+         x1=(int)(Math.random()*791)+10;
+         y1=(int)(Math.random()*591)+10;
+         int x2 = 0;
+         int y2 = 0;
+         x2=(int)(Math.random()*791)+10;
+         y2=(int)(Math.random()*591)+10;
+         g.drawLine(x1, y1, x2, y2);
+         b++;
+      }
    }
 }
 
