@@ -12,8 +12,7 @@ public class MathClassLab
 {
 	public static void main (String args[])
 	{
-		int n= (int)(Math.random()*3+1);
-
+		int n=(int)(Math.random()*3+1);
 
 		if (n==1)
 		{
