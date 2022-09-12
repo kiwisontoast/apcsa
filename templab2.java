@@ -7,7 +7,7 @@ public class templab2
 	{
 		Scanner in = new Scanner(System.in);
         Boolean continueOn=true;
-        do{		
+        while(continueOn==true){
 		System.out.print("OK, mate, what's the temperature outside? ");
 		int temp = in.nextInt();
 		if(temp >=75){
@@ -25,14 +25,15 @@ public class templab2
 		if((temp >32)&&(temp<=70)){
 			System.out.println("Looks good for soccer");
 		}
-        System.out.print("Want to try again?");
-        String temporary= in.nextLine();
-		if(temporary =="y"){
+        System.out.println("Want to try again?");
+        String temporary= in.next();
+        if(temporary.equals("y")){
+            continueOn=true;
         }
-        if(temporary=="n"){
+        if(temporary.equals("n")){
             continueOn=false;
         }
-    }while(continueOn=true);
+    }
     in.close();
 		// write the code to complete the lab 
 		
