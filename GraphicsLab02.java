@@ -42,6 +42,13 @@ class MyPanel extends JPanel
 		TableAndBackground.background(g);	
 	  TableAndBackground.table(g);
 	  Vase.vase(g);
+	  Flowers.stem(g);
+	  Flowers.RedFlower(g);
+	  Flowers.MagentaFlower(g);
+	  Flowers.OrangeFlower(g);
+	  
+
+
 	  
 	}
 
@@ -50,11 +57,46 @@ class MyPanel extends JPanel
 class Flowers   
 {
 	
-	public static void example (Graphics g)
+	public static void RedFlower (Graphics g)
 	{
-		g.setColor(Color.BLUE);
-		g.fillRect(300,300,200,200);
+		g.setColor(Color.RED);
+		g.fillOval(153,162,20,20);
+		g.fillOval(170,162,20,20);
+		g.fillOval(153,180,20,20);
+		g.fillOval(170,180,20,20);
+
+		g.setColor(Color.YELLOW);
+		g.fillOval(161,171,20,20);
 	}
+	public static void MagentaFlower (Graphics g)
+	{
+		g.setColor(Color.MAGENTA);
+		g.fillOval(193,162,20,20);
+		g.fillOval(210,162,20,20);
+		g.fillOval(193,180,20,20);
+		g.fillOval(210,180,20,20);
+
+		g.setColor(Color.YELLOW);
+		g.fillOval(201,171,20,20);
+	}
+	public static void OrangeFlower (Graphics g)
+	{
+		g.setColor(Color.ORANGE);
+		g.fillOval(173,132,20,20);
+		g.fillOval(190,132,20,20);
+		g.fillOval(173,150,20,20);
+		g.fillOval(190,150,20,20);
+
+		g.setColor(Color.YELLOW);
+		g.fillOval(181,141,20,20);
+	}
+	public static void stem(Graphics g)
+	{
+		g.setColor(Color.GREEN);
+		g.fillRect(181,161,20,40);
+
+	}
+
 }
 
 class TableAndBackground
@@ -71,6 +113,9 @@ class TableAndBackground
 	{
 		g.setColor(Color.CYAN);
 		g.fillRect(0, 0, 400, 600);
+		g.setColor(Color.lightGray);
+		g.fillRect(20, 20, 345, 460);
+
 	}
 
 }
