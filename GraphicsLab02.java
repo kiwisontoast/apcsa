@@ -41,6 +41,7 @@ class MyPanel extends JPanel
 	{	
 		TableAndBackground.background(g);	
 	  TableAndBackground.table(g);
+	  Vase.vase(g);
 	  
 	}
 
@@ -77,7 +78,14 @@ class TableAndBackground
 
 class Vase
 {
-	
+	public static void vase(Graphics g)
+	{
+		g.setColor(Color.black);
+		g.fillRect(170, 200, 40, 60);
+		g.fillOval(105, 230, 170, 250);
+		g.fillRect(160, 450, 60, 60);
+
+	}
 }
 
 
