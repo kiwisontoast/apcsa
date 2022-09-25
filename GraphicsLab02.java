@@ -33,19 +33,20 @@ class MyPanel extends JPanel
 {
 	MyPanel()
 	{
-		setSize(800, 600);
+		setSize(400, 600);
 		setVisible(true); //it's like calling the repaint method.
 	}
 	
 	public void paintComponent(Graphics g)
 	{	
-	  One.example(g);
+		TableAndBackground.background(g);	
+	  TableAndBackground.table(g);
 	  
 	}
 
 }
 
-class One   
+class Flowers   
 {
 	
 	public static void example (Graphics g)
@@ -55,8 +56,29 @@ class One
 	}
 }
 
+class TableAndBackground
+{
+	public static void table (Graphics g)
+	{
+	g.setColor(Color.darkGray);
+	g.fillRect(0,500,400,30);
+	g.fillRect(0, 500, 40, 140);
+	g.fillRect(350, 500, 50, 140);
+
+	}
+	public static void background(Graphics g)
+	{
+		g.setColor(Color.CYAN);
+		g.fillRect(0, 0, 400, 600);
+	}
+
+}
 
 
+class Vase
+{
+	
+}
 
 
 
