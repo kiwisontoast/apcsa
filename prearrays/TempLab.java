@@ -7,10 +7,11 @@ public class TempLab
 {
 	public static void main(String args[])
 	{
-		Scanner in = new Scanner(System.in);
+				Scanner in = new Scanner(System.in);
 		
 		System.out.print("OK, mate, what's the temperature outside? ");
 		int temp = in.nextInt();
+		
 		if(temp >=75){
 			System.out.println("Looks good for swimming");
 		}
