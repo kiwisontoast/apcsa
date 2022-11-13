@@ -10,6 +10,22 @@ public class RayGetFirst
 	//from the array parameter ray
 	public static int[] go(int[] ray)
 	{
-		return null;
+		int first = ray[0];
+		int largerCount = 0;
+
+		for (int i = 1; i < ray.length; i++)
+			if (ray[i] > first)
+				largerCount++;
+
+		int[] larger = new int[largerCount];
+		int li = 0;
+		for (int i = 1; i < ray.length; i++)
+			if (ray[i] > first)
+			{
+				larger[li] = ray[i];
+				li++;
+			}
+
+		return larger;
 	}
 }

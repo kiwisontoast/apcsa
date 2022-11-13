@@ -12,6 +12,22 @@ public class RayMostFreq
 	//return the first number found
 	public static int go(int[] ray)
 	{
-		return 0;
-	}
+		int largest = ray[0];
+		int largestCount = 0;
+
+		for (int i = 0; i < ray.length; i++)
+		{
+			int c = 0;
+			for (int j = 0; j < ray.length; j++)
+				if (ray[j] == ray[i])
+					c++;
+			
+			if (c > largestCount)
+			{
+				largestCount = c;
+				largest = ray[i];
+			}
+		}
+
+		return largest;	}
 }

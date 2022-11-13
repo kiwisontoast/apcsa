@@ -7,6 +7,13 @@ public class RayFirst
 {
 	public static boolean go(int[] ray)
 	{
-		return true;
+		for(int i=1;i<ray.length;i++)
+		{
+			if(ray[i]==ray[0])
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }

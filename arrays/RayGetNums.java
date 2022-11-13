@@ -10,6 +10,20 @@ public class RayGetNums
 	//greater than 11
 	public static int[] go(int[] ray)
 	{
-		return null;
+		int[] getNum = new int[3];
+		int k = 0;
+		for(int i = 0; i < ray.length; i++)
+		{
+			if(ray[i]>11)
+			{
+				getNum[k] = ray[i];
+				k++;
+			}
+			if(k==3)
+			{
+				break;
+			}
+		}
+		return getNum;
 	}
 }
