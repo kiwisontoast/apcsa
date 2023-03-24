@@ -11,5 +11,7 @@ public class MergeSorterRunner
         System.out.println("\n");
         MergeSort.mergeSort(new int[]{68,66,11,2,42,31});
         System.out.println("\n");
+        MergeSort.mergeSort(new int[]{19,3,51,80,1,56,89,32});
+        System.out.println("\n");
     }
 }
